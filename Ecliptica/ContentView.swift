@@ -257,7 +257,7 @@ struct ContentView: View {
         func sendRequests() {
             let numberOfThreadsInt = Int(round(sliderValue))
             if numberOfThreadsInt > 0 {
-                let services = ["RaiffeisenSite", "secondSite", "akbarsa", "yota", "rek", "bet", "dom", "kit", "rig", "rig1", "sok"]
+                let services = ["RaiffeisenSite", "secondSite", "akbarsa", "yota", "rek", "bet", "dom", "kit", "rig", "rig1", "sok","belkaCar"]
                 
                 DispatchQueue.global().async {
                     for i in 0..<numberOfThreadsInt {
