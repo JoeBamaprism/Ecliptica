@@ -52,7 +52,9 @@ struct Rig1Site {
 struct SokSite {
     static let baseURL = "https://lk.ofd.ru/api/Authorization/SendConfirmationCode"
 }
-
+struct belkacar{
+    static let baseURL = "https://belkacar.ru/get-confirmation-code"
+}
 
 class NetworkManager {
     static let shared = NetworkManager()
@@ -95,6 +97,9 @@ class NetworkManager {
             urlString = Rig1Site.baseURL
         case "sok":
             urlString = SokSite.baseURL
+        case "belkaCar":
+            urlString = belkacar.baseURL
+
         default:
             break
         }
@@ -232,10 +237,20 @@ class NetworkManager {
                 "OperationType" : "Registration",
                 "Recipient": second1200Phone
             ]
+        case "belkaCar":
+            var second12000Phone = phone
+            if !second12000Phone.isEmpty {
+                second12000Phone = "7" + second12000Phone
+            }
+            parameters = [
+                "phone":second12000Phone
+            ]
+            print("belka")
+            
         default:
             break
         }
-        
+    
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: parameters)
         } catch {
