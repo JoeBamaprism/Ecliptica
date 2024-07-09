@@ -142,21 +142,21 @@ class NetworkManager {
         
         switch service {
         case "RaiffeisenSite":
-            var second10Phone = phone
-            if !second10Phone.isEmpty {
-                second10Phone = "7" + second10Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "7" + secondPhone
             }
             parameters = [
                 "captchaToken" : "noactualtoken",
-                "number" : second10Phone
+                "number" : secondPhone
             ]
         case "secondSite":
-            var second19Phone = phone
-            if !second19Phone.isEmpty {
-                second19Phone = "+7" + second19Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "+7" + secondPhone
             }
             parameters = [
-                "login" : second19Phone,
+                "login" : secondPhone,
                 "returnUrl" : "/connect/authorize/callback?client_id=f1dac608-dd35-4717-8cbb-18e2f7a1d522&redirect_uri=https%3A%2F%2Flk.mosmetro.ru%2Fexternal-auth&response_type=code&scope=openid%20offline_access%20nbs.ppa%20idps&code_challenge=ON80NctdWFNtmPw7rfuiCdW_h8M6WY8UxrBLlLaoDgQ&code_challenge_method=S256&nonce=638328770452865903.ZmI4NjBiZjktMjQ4Zi00YTE0LTg1MTEtNmE5YTFmYTc1ZmZiZGI1NmMwNTAtYjEwOC00MGNkLWE1MjEtOGI4MTRkYzk5NDM0&state=oe6daed4xdl7btmh54k973&ui_locales=ru&acr_values=theme%3Alight"
             ]
         case "akbarsa":
@@ -164,88 +164,87 @@ class NetworkManager {
                 "phoneNumber" : phone
             ]
         case "yota":
-            var second18Phone = phone
-            if !second18Phone.isEmpty {
-                second18Phone = "+7" + second18Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "+7" + secondPhone
             }
             parameters = [
-                "phone" : second18Phone
+                "phone" : secondPhone
             ]
         case "rek":
-            var second1Phone = phone
-            if !second1Phone.isEmpty {
-                second1Phone = "7" + second1Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "7" + secondPhone
             }
             parameters = [
                 "aori_mode" : "",
-                "login_phone" : second1Phone,
+                "login_phone" : secondPhone,
                 "user_glcid" : "UA-58531514-11:1341294100.1696926698;",
                 "user_yclid" : "yaCounter84146887:1696926700343439929;"
             ]
         case "bet":
-            var second100Phone = phone
-            if !second100Phone.isEmpty {
-                second100Phone = "+7" + second100Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "+7" + secondPhone
             }
             parameters = [
                 "g-recaptcha-response" : "03AFY_a8W9USknoUmUbtX0KW3Ng5BKGl9ldVaNJUpxS9UR1QfiutmkZFHhQVkakRVr0wGVM7R3tPmRILtKXtQStsUDQH79JbmdLqI-APyTSvAxaJWZVzhPbOU-q2WwHBmnacHeWqXBJgGv0JCPWkT1mi9lnLAtCSQ1NKrSBY1qxEIakK44l32v7iQvolZIqAfpL8xaIBV_9b5T95DFH1XZUnQpG16OJlNql3TI5BT3Y8fHQ8nnc006pcRiB1cmWja17FfvDoGO-zQbdBDGsoGP3xcvcvgi-r8LrC3pdCmk156qSEzMvaSi9VI0j1EclElYXNmYRhNz-YcfD4EhvaQBfSSonwniL0WeFF3M8JUYu5TRSSlM8S5ydzFraYKp4oujrAaUTwVIujofyZaW5DJxXz_WhXVgSB6t_qweTf0YW5w9DB-7jl4HJQA1Pln26enY8xBywtwNlbPO2-WKMPMgNNGIe83jcYNdhxyIt37IyFJPo8UtZHmVyJv5mDMupyyhl7QYqCbdanH1QTDuO8_lBcrhvnTmga5gKQ",
-                "number" : second100Phone
+                "number" : secondPhone
             ]
         case "dom":
-            var second12Phone = phone
-            if !second12Phone.isEmpty {
-                second12Phone = "+7" + second12Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "+7" + secondPhone
             }
             parameters = [
                 "FlashCall": true,
-                "Phone": second12Phone
+                "Phone": secondPhone
             ]
         case "kit":
-            var second12Phone = phone
-            if !second12Phone.isEmpty {
-                second12Phone = "+7" + second12Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "+7" + secondPhone
             }
             parameters = [
                 "form_type" : "form_registration_on_site",
-                "phone": second12Phone,
+                "phone": secondPhone,
                 "forPhoneConfirmation": true,
                 "smart-token" : ""
             ]
         case "rig":
-            var second12200Phone = phone
-            if !second12200Phone.isEmpty {
-                second12200Phone = "7" + second12200Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "7" + secondPhone
             }
             parameters = [
-                "phone": second12200Phone
+                "phone": secondPhone
             ]
         case "rig1":
-            var second122009Phone = phone
-            if !second122009Phone.isEmpty {
-                second122009Phone = "+7" + second122009Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "+7" + secondPhone
             }
             parameters = [
-                "phone": second122009Phone,
+                "phone": secondPhone,
                 "country_code": "KZ"
             ]
         case "sok":
-            var second1200Phone = phone
-            if !second1200Phone.isEmpty {
-                second1200Phone = "7" + second1200Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "7" + secondPhone
             }
             parameters = [
                 "OperationType" : "Registration",
-                "Recipient": second1200Phone
+                "Recipient": secondPhone
             ]
         case "belkaCar":
-            var second12000Phone = phone
-            if !second12000Phone.isEmpty {
-                second12000Phone = "7" + second12000Phone
+            var secondPhone = phone
+            if !secondPhone.isEmpty {
+                secondPhone = "+7" + secondPhone
             }
             parameters = [
-                "phone":second12000Phone
+                "phone":secondPhone
             ]
-            print("belka")
             
         default:
             break
